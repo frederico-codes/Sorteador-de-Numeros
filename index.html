@@ -7,8 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Sorteador de Números</title>
-  
+  <title>Sorteador de Números</title>  
 </head>
 <body>
   <div class="container">
@@ -17,9 +16,9 @@
         <img src="assets/logo.svg" alt="Logo" />
         <span>numbers</span>
       </div>
-      <div class="subtitle">ONLINE – GRATUITO</div>
     </div>
 
+    <div class="subtitle">ONLINE – GRATUITO</div>
     <div class="title">SORTEADOR DE NÚMEROS</div>
 
     <section id="tela-form" class="screen active">
@@ -51,26 +50,40 @@
       <button onclick="sortear()">SORTEAR →</button>
 
       <div class="faq">
-        <div class="img-p">
+        <div class="flex">
           <img src="assets/faq.svg" alt="dúvidas">
-          <p><strong>Como funciona o sorteador de números?</strong><br>
-          O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+          <h6>Como funciona o sorteador de números?</h6>
         </div>
+          <p class="faq-flex">O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
 
-        <div class="img-classs">
+        <div class="flex">
           <img src="assets/faq.svg" alt="dúvidas">
-          <p><strong>Posso escolher o intervalo dos números?</strong><br>
-          Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+          <h6><strong>Posso escolher o intervalo dos números?</strong></h6>
         </div>
+          <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
       </div>
     </section>
 
-       <section id="tela-resultado" class="screen">
+    <section id="tela-resultado" class="screen">
       <div class="result-wrapper">
         <div class="result-title">RESULTADO DO SORTEIO</div>
         <div class="result-subtitle">1º RESULTADO</div>
         <div class="result-numbers" id="resultado-numeros"></div>
         <button id="btn-novamente" onclick="resetar()" style="display: none">SORTEAR NOVAMENTE ⟳</button>
+
+         <div class="faq">
+        <div class="flex">
+          <img src="assets/faq.svg" alt="dúvidas">
+          <h6>Como funciona o sorteador de números?</h6>
+        </div>
+          <p class="faq-flex">O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+
+        <div class="flex">
+          <img src="assets/faq.svg" alt="dúvidas">
+          <h6><strong>Posso escolher o intervalo dos números?</strong></h6>
+        </div>
+          <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+      </div>
       </div>
     </section>
   </div>

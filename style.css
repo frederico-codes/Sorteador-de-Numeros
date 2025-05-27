@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  width: 39.0rem;
+  max-width: 39.0rem;
   padding: 2rem 1.5rem;
   border-radius: 1.0rem;
   background: #0d0d0d;
@@ -51,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4.6rem;
 }
 
 
@@ -60,69 +60,92 @@ body {
     height: 4.0rem;
 }
 
-.title {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    background-image: var(--gradient-background);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+.title { 
+  font-family:" Sora",sans-serif;
+  font-size: 4.0rem; 
+  font-weight: 800;
+  line-height: 130%; 
+  letter-spacing: -.16rem;
+  text-transform: uppercase;
+  margin-bottom:4.2rem;
 }
-
 
 .subtitle {
-    text-align: center;
-    font-size: 0.75rem;
-    color: #ccc;
-    margin-top: 0.2rem;
-    letter-spacing: 1px;
+  font-family: "Roboto Mono",sans-serif;
+  font-size: 1.6rem;  
+  font-weight: 700;
+  line-height: 150%; 
+  text-transform: uppercase;
+  margin-bottom: .8rem;
 }
 
-
 .form-title {
-    margin-top: 2rem;
-    font-weight: bold;
-    font-size: 1rem;
+  color: var(--content-primary, #FFF);
+  font-family: "Roboto Flex",sans-serif;
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin-bottom: .2rem;
 }
 
 .description {
-    font-size: 0.875rem;
-    margin-top: 0.5rem;
-    color: #ccc;
+  color: var(--content-tertiary, #D9D9D9);
+  font-family: "Roboto Flex",sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom:4.0rem;
 }
 
 .inputs {
-    display: flex;
-    justify-content: space-between;
-    margin: 1.5rem 0;
+  display: flex; 
+
+  gap: 1.2rem; 
+  margin-bottom:2.0rem;
+  width:100%; 
 }
 
 .inputs label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.75rem;
-    font-weight: bold;
+  color: var(--content-secondary, #C7C9CC);
+  text-align: center;
+  font-family: "Roboto Flex",sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 150%; 
+  text-transform: uppercase;
+  width: 10.6rem;
+  height:8.8rem;
 }
 
 .inputs input {
-    margin-top: 0.5rem;
-    background-color: #1a1a1a;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 0.5rem;
-    width: 6.0rem;
-    text-align: center;
-    font-size: 1rem;
+  color: var(--content-primary, #FFF);
+  text-align: center;
+  font-family: "Sora",sans-serif;
+  font-size: 3.2rem;  
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  width:10.0rem;
+  height:4.8rem;
+  background-color: transparent;
+  margin-bottom: 2.0rem;
+  border: 0;
+ 
 }
 
 .switch-container {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4.0rem;
+}
+
+.switch-container span{
+  color: var(--content-primary, #FFF);
+  font-family: "Roboto Flex",sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 150%; 
 }
 
 .switch {
@@ -156,7 +179,7 @@ body {
   content: "";
   width: 1.4rem;
   height: 1.4rem;
-  left: -.1rem;
+  left: -.9rem;
   bottom: .3rem;
   background-color: white;
   border-radius: 50%;
@@ -172,19 +195,25 @@ input:checked + .slider:before {
 }
 
 button {
-    width: 100%;
-    padding: 1rem;
-    background-color: #2a2734;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    border-radius: .8rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    background-image: var(--gradient-background);
+  width: 100%;
+  height: 5.6rem;
+  padding: 1.6rem;
+  color: #FFF;
+  text-align: center; 
+  font-family: "Roboto Flex",sans-serif;
+  font-size: 1.6rem;  
+  font-weight: 700;
+  line-height: 150%; 
+  text-transform: uppercase; 
+  border: none;
+  border-radius: .8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;   
+  background: var(--background-tertiary, #24222E);
+  margin-bottom: 8.0rem;
 }
 
 
@@ -217,17 +246,30 @@ button {
   transform: translateY(0);
 }
 
-.screen {
-  display: none;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
 .screen.active {
   display: block;
   opacity: 1;
   transform: translateY(0);
+}
+
+.result-title{
+  color: var(--content-primary, #FFF);
+  text-align: center;
+  font-family: "Roboto Flex",sans-serif;
+  font-size: 2.0rem;  
+  font-weight: 700;
+  line-height: 150%; 
+  text-transform: uppercase;
+}
+.result-subtitle{
+  color: var(--content-secondary, #C7C9CC);
+  text-align: center;
+  font-family: "Roboto Mono",sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; 
+  text-transform: uppercase;
 }
 
 .result-wrapper {
@@ -258,19 +300,14 @@ button {
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
 }
-
-button {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: white;
-  border: none;
-  border-radius: 1.0rem;
-  cursor: pointer;
-  background: #1c1c1c;
-  margin-top: 1rem;
+.result-numbers span{
+  display: flex;
+  align-items: center;
+  width: 5.8rem;
+  height: 9.8rem;
 }
+
+
 
 button.gradient {
   background-image: var(--gradient-background);
@@ -284,10 +321,14 @@ button.gradient {
   line-height: 1.6;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+ 
+
+}
+.faq-flex{
+  margin-bottom: 3.6rem;
 }
 
-.faq .img-p{
+.faq .flex{
   display: flex;
 }
 .faq img{
@@ -295,30 +336,35 @@ button.gradient {
   height:2.0rem;
 }
 
-.faq p {
+.flex{
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+
+.flex h6 {
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
   position: relative;
-  color: var(--content-secondary, #C7C9CC);
+  color: var(--content-brand, #C58DE7);
   font-family: "Roboto Flex";
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0px; 
+}
+
+
+
+.faq p{
+  color: var(--content-secondary, #C7C9CC); 
+  font-family: "Roboto Flex",sans-serif;
   font-size: 1.2rem;  
   font-weight: 500;
-  line-height: 150%; 
+  line-height: 150%;
+  text-align: left; 
 }
 
-.faq p::before {
-  content: "\f0eb";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: var(--accent-pink);
-  font-size: 1rem;
-  position: relative;
-  top: 2px;
-}
 
-.faq strong {
-  color: var(--accent-pink);
-  display: block;
-  margin-bottom: 0.25rem;
-}
