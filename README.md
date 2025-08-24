@@ -8,7 +8,7 @@ Aplicação desenvolvida como desafio de formação da **Rocketseat**, com o obj
 
 ## 📚 Sobre o projeto  
 
-Você vai desenvolver uma aplicação responsiva de um **sorteador de números**, onde o usuário seleciona quantos números deseja sortear e define o intervalo para o sorteio.  
+Desenvolvi uma aplicação responsiva de um **sorteador de números**, onde o usuário seleciona quantos números deseja sortear e define o intervalo para o sorteio.  
 
 ### 🎯 Funcionalidades da aplicação  
 
